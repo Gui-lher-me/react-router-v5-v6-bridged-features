@@ -72,7 +72,7 @@ const ExampleComponent = () => {
   return (
     <input
       type="text"
-      value={searchParams.get("query")}
+      value={searchParams.get("query") ?? ""}
       onChange={handleInputChange}
     />
   );
